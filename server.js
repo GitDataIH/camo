@@ -243,7 +243,7 @@
     var base, dest_url, encoded_url, error, hmac, hmac_digest, query_digest, ref, ref1, ref2, transferredHeaders, url, url_type, user_agent;
     if (req.method !== 'GET' || req.url === '/') {
       resp.writeHead(200, default_security_headers);
-      return resp.end('ih-image-proxy');
+      return resp.end('ih-image-proxy 200 ok');
     } else if (req.url === '/favicon.ico') {
       resp.writeHead(200, default_security_headers);
       return resp.end('ok');
